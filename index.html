@@ -113,7 +113,7 @@ function display(){
     let btn=document.createElement("button")
     btn.innerText="Add to cart"
     btn.className="btn"
-    btn.onclick(tc)
+    btn.addEventListener("click",addcart)
 
        namep.innerText=`${el.name}`
        username.innerText=`${el.username}`
@@ -125,7 +125,7 @@ function display(){
 
 }
 display()
-function tc(){
-    console.log(btnc)
+function addcart(event){
+    console.log(event.target.childNodes )
 }
 </script>
